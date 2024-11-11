@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-my-c',
@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
   templateUrl: './my-c.component.html',
   styleUrl: './my-c.component.css'
 })
-export class MyCComponent {
-
+export class MyCComponent implements OnInit {
+    name = 'BFM Tv'
+    age = 21
+    lieu = "France"
+    ngOnInit(): void {
+      
+    }
 }

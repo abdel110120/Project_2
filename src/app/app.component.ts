@@ -9,5 +9,16 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  
+
+user = {
+  name: 'BFM Tv',
+  age : 21,
+  lieu : 'France'
+
+}
+myname: string = '';
+
+  change(){
+    this.user.name = this.myname; 
+  }
 }

@@ -1,1 +1,74 @@
-<img src="https://www.ecured.cu/images/5/55/Angular1.jpg" alt="Lina">
+<nav>
+  <a href="#home" class="active">Accueil</a>
+  <a href="#about">À propos</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+  <a href="#blog">Blog</a>
+</nav>
+
+
+<p> Bonjour Abdelilah </p>
+ <div>
+ 
+  <h5>Je suis {{user.name}}</h5>
+  <h5>j'ai {{user.age}}</h5>
+  <h5>J'habite en {{user.lieu}}</h5>
+
+ </div>
+
+ <input type="text" [(ngModel)]="myname">
+
+ <button (click)="change()" >  Click me to change the name</button>
+
+
+
+<table>
+  <tr>
+      <th>#</th>
+      <th>Ville</th>
+      <th>Pays</th>
+      <th>Population (approx.)</th>
+  </tr>
+  <tr>
+      <td>1</td>
+      <td>Paris</td>
+      <td>France</td>
+      <td>2,161,000</td>
+  </tr>
+  <tr>
+      <td>2</td>
+      <td>Tokyo</td>
+      <td>Japon</td>
+      <td>9,273,000</td>
+  </tr>
+  <tr>
+      <td>3</td>
+      <td>New York</td>
+      <td>États-Unis</td>
+      <td>8,336,000</td>
+  </tr>
+  <tr>
+      <td>4</td>
+      <td>Casablanca</td>
+      <td>Maroc</td>
+      <td>3,360,000</td>
+  </tr>
+  <tr>
+      <td>5</td>
+      <td>Shanghai</td>
+      <td>Chine</td>
+      <td>24,281,000</td>
+  </tr>
+  <tr>
+      <td>6</td>
+      <td>Berlin</td>
+      <td>Allemagne</td>
+      <td>3,769,000</td>
+  </tr>
+  <tr>
+      <td>7</td>
+      <td>São Paulo</td>
+      <td>Brésil</td>
+      <td>12,252,000</td>
+  </tr>
+</table>
