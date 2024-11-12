@@ -52,3 +52,9 @@
                 text-align: left;
             }
         }
+        .bg-danger{
+            background-color: red;
+        }
+        .bg-success{
+            background-color: #4CAF50;
+        }

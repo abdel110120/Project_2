@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';  // Importer FormsModule
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -9,7 +10,8 @@ import { FormsModule } from '@angular/forms';  // Importer FormsModule
   ],
   imports: [
     BrowserModule,
-    FormsModule  // Ajouter FormsModule ici
+    FormsModule,  
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

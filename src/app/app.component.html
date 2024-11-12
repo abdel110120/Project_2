@@ -7,7 +7,26 @@
 </nav>
 
 
-<p> Bonjour Abdelilah </p>
+
+<img *ngIf="display == true " src="https://tse2.mm.bing.net/th?id=OIP.me7iTQgxCS8wIRLmwgaobQHaEO&pid=Api&P=0&h=180" alt="luffy">
+<button (click)="display = display">Click to appear</button>
+
+
+<div *ngFor="let item of students" [ngClass]="{'bg-danger': item.age <= 20 , 'bg-success': item.age > 20}">
+
+
+    <h1>{{item.name}}</h1>
+    <p>{{item.age}}</p>
+
+   
+
+   
+
+
+</div>
+
+
+
  <div>
  
   <h5>Je suis {{user.name}}</h5>
@@ -16,9 +35,9 @@
 
  </div>
 
- <input type="text" [(ngModel)]="myname">
+ 
 
- <button (click)="change()" >  Click me to change the name</button>
+ 
 
 
 
